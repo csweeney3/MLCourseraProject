@@ -4,7 +4,7 @@ output: html_document
 ---
 **Human Activity Recognition, Weight Lifting Exercise Dataset **
 
-In contrast to studies to determine what activity a person is doing, this study evaluates participants execution of common weight lifting exercise, 4 done with incorrect form and one done per specification. This is identified as the classe, with "A"" being correct form and B through E being incorrect form mimicing common mistakes.
+In contrast to studies to determine what activity a person is doing, this study evaluates participants execution of common weight lifting exercise, 4 done with incorrect form and one done per specification. This is identified as the classe, with "A" being correct form and "B through "E" being incorrect form mimicking common mistakes.
 Data were collected via sensors at the bicep, wrist and hips of the participants.
 
 
@@ -90,7 +90,7 @@ Validating the model against the subsetted validation dataset.
 test_predict <- predict(model,validationdata)
 confusionMatrix(test_predict,validationdata$classe)
 ```
-The estimated accuracy of the model is 99.3% and the estimated out-of-sample error based on our fitted model applied to the cross validation dataset is 0.7%. 
+The estimated accuracy of the model is 99.2% and the estimated out-of-sample error based on our fitted model applied to the cross validation dataset is 0.8%. 
 
 
 **Predict Classe in Test Data**
